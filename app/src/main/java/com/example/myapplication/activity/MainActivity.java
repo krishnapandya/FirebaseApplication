@@ -121,7 +121,6 @@ public class MainActivity extends AppCompatActivity implements OnLoginListener {
 
     @Override
     public void onLogin(LiveData<User> loginResponse) {
-
         loginResponse.observe(this, new Observer<User>() {
             @Override
             public void onChanged(User user) {
